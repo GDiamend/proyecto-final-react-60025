@@ -1,8 +1,8 @@
-import CartImg from "../../../img/cart.svg";
+import Image from "../../Image/Image";
 
-function CartWidget() {
+function CartWidget({img}) {
     return <>
-    <img src={CartImg} alt="Cart Logo"/>
+    <Image img={img}/>
     <p>23</p>
     </>
 }

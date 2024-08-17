@@ -1,4 +1,5 @@
 import CartWidget from "./components/CartWidget";
+import CartImg from "../../img/cart.svg";
 
 function NavBar() {
     return <>
@@ -10,7 +11,7 @@ function NavBar() {
                 <li><a href="#">Nosotros</a></li>
                 <li><a href="#">Contacto</a></li>
             </ul>
-            <CartWidget/>
+            <CartWidget img={CartImg} alt="Cart Logo"/>
         </nav>
     </>
 }
