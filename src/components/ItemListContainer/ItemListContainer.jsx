@@ -4,8 +4,9 @@ function ItemListContainer() {
     return <>
         <div class="text-center m-3">
             <Card
-                msg="Planifica tu Dieta con Nuestros Productos"
+                title="Nombre del artículo"
                 img="https://media1.tenor.com/m/0muRp0H9hTsAAAAC/greetings.gif"
+                marca="Planifica tu Dieta con Nuestros Productos"
             />
         </div>
     </>

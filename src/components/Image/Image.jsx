@@ -1,6 +1,6 @@
 function Image({img}) {
     return <>
-    <img src={img}/>
+    <img src={img} class="card-img-top" alt="..."></img>
     </>
 }
 
