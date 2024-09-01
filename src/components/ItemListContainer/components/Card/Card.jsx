@@ -1,19 +1,22 @@
 import Image from "../../../Image/Image";
 
 function Card(props) {
-    let { title, img, marca } = props;
+    let { title, img, brand } = props;
 
     return <>
-        <div class="card h-100">
-            <div class="card-header">
-                <h5 class="card-title">{title}</h5>
+        <div className="card h-100">
+            <div className="card-header">
+                <h5 className="card-title">{title}</h5>
             </div>
-            <Image img={img} />
-            <div class="card-body">
-                <p class="card-text">{marca}</p>
+            <div className="m-2">
+                <Image img={img} />
+            </div>
+            <hr />
+            <div className="card-body">
+                <p className="card-text">{brand}</p>
             </div>
             <div>
-                <a class="btn btn-primary m-3" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                <a className="btn btn-primary m-3" data-bs-toggle="offcanvas" href="#" role="button" aria-controls="offcanvasExample">
                     Ver detalle
                 </a>
             </div>

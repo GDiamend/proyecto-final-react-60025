@@ -1,15 +1,22 @@
 import Card from "./components/Card/Card";
+import itemList from "../../database";
 
 function ItemListContainer() {
-    return <>
-        <div class="text-center m-3">
-            <Card
-                title="Nombre del artículo"
-                img="https://media1.tenor.com/m/0muRp0H9hTsAAAAC/greetings.gif"
-                marca="Planifica tu Dieta con Nuestros Productos"
-            />
-        </div>
-    </>
+    const renderedCards = itemList.map((item) => {
+        return (
+            <div className="col text-center m-3">
+                <Card
+                    key={item.id}
+                    title={item.title}
+                    img={item.src}
+                    brand={item.brand}
+                    category={item.category}
+                />
+            </div>
+        )
+    })
+
+    return(<div className="row row-cols-1 row-cols-5 justify-content-center">{renderedCards}</div>)
 }
 
 export default ItemListContainer;

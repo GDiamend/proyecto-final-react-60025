@@ -1,30 +1,27 @@
+import { Link } from "react-router-dom";
 import CartWidget from "./components/CartWidget";
 import CartImg from "../../img/cart.svg";
+import Image from "../Image/Image"
+import Logo from "../../img/Logo.webp"
 
 function NavBar() {
     return <>
-        <nav class="navbar container-fluid bg-color">
-            <div class="mx-4">
-                <a class="navbar-brand" href="#">
-                    <CartWidget img={CartImg} alt="Cart Logo" width="40" height="40" class="d-inline-block align-text-top" />
+        <nav className="navbar container-fluid bg-color">
+            <div className="mx-4">
+                <a className="navbar-brand" href="#">
+                    <CartWidget img={CartImg} alt="Cart Logo" className="d-inline-block align-text-top w-25 h-25" />
                 </a>
             </div>
-            <div class="navbar-dark">
-                <ul class="navbar-nav flex-row justify-content-end">
-                    <li class="nav-item">
-                        <a class="nav-link navbar-brand fw-bolder" href="#">Inicio</a>
+            <div>
+                <Link to="/"><Image img={Logo} /></Link>
+            </div>
+            <div className="navbar-dark">
+                <ul className="navbar-nav flex-row justify-content-end">
+                    <li className="nav-item">
+                        <Link to="/" className="nav-link navbar-brand fw-bolder">Inicio</Link>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link navbar-brand fw-bolder" href="#">Guias</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link navbar-brand fw-bolder" href="#">Productos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link navbar-brand fw-bolder" href="#">Nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link navbar-brand fw-bolder" href="#">Contacto</a>
+                    <li className="nav-item">
+                        <Link to="/products" className="nav-link navbar-brand fw-bolder">Productos</Link>
                     </li>
                 </ul>
             </div>
