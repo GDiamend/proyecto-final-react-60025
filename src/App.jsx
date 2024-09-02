@@ -12,8 +12,8 @@ function App() {
             <Routes>
                 <Route path="/" element={<Layout />}>
                     <Route index element={<Index />} />
-                    <Route path="category" element={<Category />} />
-                    <Route path="*" element={<Error />} />
+                    <Route path="category/:categoryName" element={<Category />} />
+                    
                 </Route>
             </Routes>
         </BrowserRouter>

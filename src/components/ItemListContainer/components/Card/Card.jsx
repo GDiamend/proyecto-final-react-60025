@@ -1,7 +1,8 @@
+import { NavLink } from "react-router-dom";
 import Image from "../../../Image/Image";
 
 function Card(props) {
-    let { title, img, brand } = props;
+    let { title, img, brand, category } = props;
 
     return <>
         <div className="card h-100">
@@ -16,9 +17,7 @@ function Card(props) {
                 <p className="card-text">{brand}</p>
             </div>
             <div>
-                <a className="btn btn-primary m-3" data-bs-toggle="offcanvas" href="#" role="button" aria-controls="offcanvasExample">
-                    Ver detalle
-                </a>
+                <NavLink to={`/category/${category}`} className="btn btn-primary m-3">Ver detalle</NavLink>
             </div>
         </div>
     </>

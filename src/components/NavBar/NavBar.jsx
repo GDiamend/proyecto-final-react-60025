@@ -21,7 +21,13 @@ function NavBar() {
                         <Link to="/" className="nav-link navbar-brand fw-bolder">Inicio</Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/products" className="nav-link navbar-brand fw-bolder">Productos</Link>
+                        <Link to="/category/drink" className="nav-link navbar-brand fw-bolder">Bebida</Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link to="/category/food" className="nav-link navbar-brand fw-bolder">Comida</Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link to="/category/breakfast" className="nav-link navbar-brand fw-bolder">Desayuno</Link>
                     </li>
                 </ul>
             </div>

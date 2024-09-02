@@ -18,84 +18,96 @@ const itemList =
             "title": "Alfajor",
             "src": Alfajor,
             "brand": "Felices las vacas",
-            "category": "comida"
+            "category": "food",
+            "price": "1100"
         },
         {
             "id": 2,
             "title": "Avena",
             "src": AvenaInst,
             "brand": "Granix",
-            "category": "desayuno"
+            "category": "breakfast",
+            "price": "2500"
         },
         {
             "id": 3,
             "title": "Avena",
             "src": AvenaTrad,
             "brand": "Granix",
-            "category": "desayuno"
+            "category": "breakfast",
+            "price": "2500"
         },
         {
             "id": 4,
             "title": "Dulce de leche",
             "src": DDL,
             "brand": "Felices las vacas",
-            "category": "desayuno"
+            "category": "breakfast",
+            "price": "2200"
         },
         {
             "id": 5,
             "title": "Hamburguesas",
             "src": Hamburguesas,
             "brand": "Cordon green",
-            "category": "comida"
+            "category": "food",
+            "price": "3300"
         },
         {
             "id": 6,
             "title": "Jugo de arandanos",
             "src": JArandanos,
             "brand": "Sendero azul",
-            "category": "bebida"
+            "category": "drink",
+            "price": "2500"
         },
         {
             "id": 7,
             "title": "Kefir",
             "src": Kefir,
             "brand": "Lifeway",
-            "category": "bebida"
+            "category": "drink",
+            "price": "3200"
         },
         {
             "id": 8,
             "title": "Leche de almendras",
             "src": LAlmendrasTra,
             "brand": "Tratenfu",
-            "category": "bebida"
+            "category": "drink",
+            "price": "1800"
         },
         {
             "id": 9,
             "title": "Leche de almendras",
             "src": LAlmendrasSilk,
             "brand": "Silk",
-            "category": "bebida"
+            "category": "drink",
+            "price": "1800"
         },
         {
             "id": 10,
             "title": "Leche de almendras y coco",
             "src": LAlmenCoco,
             "brand": "Tratenfu",
-            "category": "bebida"
+            "category": "drink",
+            "price": "1900"
         },
         {
             "id": 11,
             "title": "Queso de almendras",
             "src": QMuzza,
             "brand": "Felices las vacas",
-            "category": "comida"
+            "category": "food",
+            "price": "4000"
         },
         {
             "id": 12,
             "title": "Queso cheddar",
             "src": QCheddar,
             "brand": "Felices las vacas",
-            "category": "comida"
+            "category": "food",
+            "price": "3800"
         }
     ]
 
