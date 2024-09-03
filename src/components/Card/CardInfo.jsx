@@ -1,4 +1,4 @@
-import Image from "../../../Image/Image";
+import Image from "../Image/Image";
 import { useState } from "react";
 
 function CardInfo(props) {
@@ -6,8 +6,8 @@ function CardInfo(props) {
 
     const [quantity, setQuantity] = useState(0);
 
-    return <>
-        <div className="card h-100">
+    return <div className="m-3 text-end">
+        <div className="card w-25 text-center">
             <div className="card-header">
                 <h5 className="card-title">{title}</h5>
             </div>
@@ -25,7 +25,7 @@ function CardInfo(props) {
                 <button style={{ width: '30px', margin: '4px' }} onClick={() => setQuantity(quantity + 1)}> + </button>
             </div>
         </div>
-    </>
+    </div>
 }
 
 export default CardInfo;

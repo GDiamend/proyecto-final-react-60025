@@ -1,7 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./components/pages/Layout";
 import Index from "./components/pages/Index";
-import Category from "./components/pages/Category";
+import ItemListContainer from "./components/pages/ItemListContainer";
+import ItemDetailContainer from "./components/pages/ItemDetailContainer";
 import Error from "./components/pages/Error";
 import "./App.css";
 
@@ -12,8 +13,9 @@ function App() {
             <Routes>
                 <Route path="/" element={<Layout />}>
                     <Route index element={<Index />} />
-                    <Route path="category/:categoryName" element={<Category />} />
-                    
+                    <Route path="category/:categoryName" element={<ItemListContainer />} />
+                    <Route path="item/:id" element={<ItemDetailContainer />} />
+                    <Route path="*" element={<Error />} />
                 </Route>
             </Routes>
         </BrowserRouter>

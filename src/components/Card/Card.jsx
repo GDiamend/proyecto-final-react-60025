@@ -1,8 +1,8 @@
 import { NavLink } from "react-router-dom";
-import Image from "../../../Image/Image";
+import Image from "../Image/Image";
 
 function Card(props) {
-    let { title, img, brand, category } = props;
+    let { id, title, img, brand } = props;
 
     return <>
         <div className="card h-100">
@@ -17,7 +17,7 @@ function Card(props) {
                 <p className="card-text">{brand}</p>
             </div>
             <div>
-                <NavLink to={`/category/${category}`} className="btn btn-primary m-3">Ver detalle</NavLink>
+                <NavLink to={`/item/${id}`} className="btn btn-primary m-3">Ver detalle</NavLink>
             </div>
         </div>
     </>

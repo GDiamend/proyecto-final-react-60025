@@ -1,4 +1,4 @@
-import Card from "./components/Card/Card";
+import Card from "../Card/Card";
 import itemList from "../../database";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
@@ -21,6 +21,7 @@ function ItemListContainer() {
             {filteredItems.map(item => (
                 <div className="col text-center m-3" key={item.id}>
                     <Card
+                        id={item.id}
                         title={item.title}
                         img={item.src}
                         brand={item.brand}
