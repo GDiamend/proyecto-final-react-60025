@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  .bg-color {
+    background-color: rgb(96, 220, 123);
+  }
+}
+
+.h-fix {
+  height: 400px;
+}
+
+.animate__pulse {
+  animation-iteration-count: infinite;
+}

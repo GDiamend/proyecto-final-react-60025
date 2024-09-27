@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+# Happy Bowl - Comida Sana
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este es un proyecto desarrollado en **React** y consiste en una **Single Page Application (SPA)** para un e-commerce de productos alimenticios saludables llamado **Happy Bowl - Comida Sana**. 
 
-## Available Scripts
+## Funcionalidades
 
-In the project directory, you can run:
+- **Ver el listado de artículos disponibles**: Los productos provienen de una base de datos en **Firebase**.
+- **Filtrar por tipo de artículo**: Los usuarios pueden filtrar los productos según categorías específicas.
+- **Ver detalles de un artículo puntual**: Cada producto tiene una vista detallada para más información.
+- **Agregar al carrito**: Los productos pueden ser añadidos al carrito de compras.
 
-### `npm start`
+### Funcionalidades del carrito:
+- **Limpiar carrito**: El usuario puede vaciar todo el carrito de una sola vez.
+- **Eliminar items individualmente**: Permite eliminar productos específicos del carrito.
+- **Ejecutar la compra**: Luego de completar un formulario con nombre y correo, se envía la orden de compra a **Firebase**, donde se guarda en una lista.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Validaciones
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- No se pueden agregar números negativos al carrito.
+- No se pueden comprar artículos sin stock.
+- La compra no se puede completar sin llenar todos los campos del formulario.
 
-### `npm test`
+## Dependencias
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **bootstrap**: Para estilos y diseño responsivo.
+- **bootstrap-icons**: Íconos para la interfaz.
+- **firebase**: Gestión de base de datos y autenticación.
+- **react**: Librería para la creación de componentes.
+- **react-dom**: Renderización de componentes en el DOM.
+- **react-router-dom**: Manejo de rutas en la aplicación.
+- **sweetalert2**: Alertas y notificaciones interactivas.
+- **animate-css**: Animaciones.
 
-### `npm run build`
+### Desarrollado por
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Gastón Ariel Diamend Lezcano**

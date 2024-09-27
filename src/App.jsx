@@ -1,27 +1,25 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Layout from "./components/pages/Layout";
-import Index from "./components/pages/Index";
-import ItemListContainer from "./components/pages/ItemListContainer";
-import ItemDetailContainer from "./components/pages/ItemDetailContainer";
-import Error from "./components/pages/Error";
-import "./App.css";
+import NavBar from "./components/NavBar/NavBar";
+import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
+import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
+import Cart from "./components/Cart/Cart";
+import CartContextProvider from "./context/CartContext/CartContextProvider";
+import { Route, Routes } from "react-router-dom"
+import './App.css'
 
-function App() {
-
-    return (
-        <BrowserRouter>
-            <Routes>
-                <Route path="/" element={<Layout />}>
-                    <Route index element={<Index />} />
-                    <Route path="category/:categoryName" element={<ItemListContainer />} />
-                    <Route path="item/:id" element={<ItemDetailContainer />} />
-                    <Route path="*" element={<Error />} />
-                </Route>
-            </Routes>
-        </BrowserRouter>
-
-
-    )
+const App = () => {
+  return (
+    <>
+      <CartContextProvider>
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<ItemListContainer />} />
+          <Route path="/category/:categoryId" element={<ItemListContainer />} />
+          <Route path="/detail/:id" element={<ItemDetailContainer />} />
+          <Route path="/cart" element={<Cart />} />
+        </Routes>
+      </CartContextProvider>
+    </>
+  )
 }
 
 export default App;

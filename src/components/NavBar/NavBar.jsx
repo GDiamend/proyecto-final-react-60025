@@ -1,33 +1,35 @@
-import { Link } from "react-router-dom";
-import CartWidget from "./components/CartWidget";
-import CartImg from "../../img/cart.svg";
-import Image from "../Image/Image"
-import Logo from "../../img/Logo.webp"
+import { NavLink } from "react-router-dom";
+import "./style.css"
+import { useContext } from "react";
+import CartContext from "../../context/CartContext/CartContext";
+import Logo from "../../images/Logo.webp"
 
-function NavBar() {
+const NavBar = () => {
+    const { cart } = useContext(CartContext);
+
     return <>
         <nav className="navbar container-fluid bg-color">
             <div className="mx-4">
-                <a className="navbar-brand" href="#">
-                    <CartWidget img={CartImg} alt="Cart Logo" className="d-inline-block align-text-top w-25 h-25" />
-                </a>
+                <NavLink className="navbar-brand" to="/cart">
+                    <i className="bi bi-cart4 d-inline-block align-text-top fs-3"> Carrito <span>{cart.length} items</span></i>
+                </NavLink>
             </div>
             <div>
-                <Link to="/"><Image img={Logo} /></Link>
+                <NavLink to="/"><img src={Logo} alt="Logo" /></NavLink>
             </div>
             <div className="navbar-dark">
                 <ul className="navbar-nav flex-row justify-content-end">
                     <li className="nav-item">
-                        <Link to="/" className="nav-link navbar-brand fw-bolder">Inicio</Link>
+                        <NavLink to="/" className="nav-link navbar-brand fw-bolder">Inicio</NavLink>
                     </li>
                     <li className="nav-item">
-                        <Link to="/category/drink" className="nav-link navbar-brand fw-bolder">Bebida</Link>
+                        <NavLink to="/category/drink" className="nav-link navbar-brand fw-bolder">Bebida</NavLink>
                     </li>
                     <li className="nav-item">
-                        <Link to="/category/food" className="nav-link navbar-brand fw-bolder">Comida</Link>
+                        <NavLink to="/category/food" className="nav-link navbar-brand fw-bolder">Comida</NavLink>
                     </li>
                     <li className="nav-item">
-                        <Link to="/category/breakfast" className="nav-link navbar-brand fw-bolder">Desayuno</Link>
+                        <NavLink to="/category/breakfast" className="nav-link navbar-brand fw-bolder">Desayuno</NavLink>
                     </li>
                 </ul>
             </div>
