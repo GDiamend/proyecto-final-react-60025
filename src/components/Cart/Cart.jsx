@@ -1,9 +1,8 @@
 import { useContext, useState } from 'react'
-import Form from '../Form/Form';
-import CartContext from '../../context/CartContext/CartContext';
 import { getFirestore, collection, addDoc, getDoc, doc, updateDoc } from 'firebase/firestore';
-import "./style.css";
 import { Link } from 'react-router-dom';
+import CartContext from '../../context/CartContext/CartContext';
+import Form from '../Form/Form';
 import Swal from 'sweetalert2';
 
 const Cart = () => {
@@ -122,9 +121,7 @@ const Cart = () => {
             });
 
             clear();
-        } catch (error) {
-            console.error("Error al generar la orden: ", error);
-        }
+        } catch (error) { }
     };
 
     return (

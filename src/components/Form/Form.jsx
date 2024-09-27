@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Form = ({ handleChange, submit, formData, error }) => {
     return (
         <form className='text-center m-3' onSubmit={submit}>
