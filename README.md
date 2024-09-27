@@ -1,6 +1,6 @@
 # Happy Bowl - Comida Sana
 
-![](/src/components/images/web-gif.gif)
+![](/src/components/images/web-mkv.mkv)
 
 
 Este es un proyecto desarrollado en **React** y consiste en una **Single Page Application (SPA)** para un e-commerce de productos alimenticios saludables llamado **Happy Bowl - Comida Sana**. 
