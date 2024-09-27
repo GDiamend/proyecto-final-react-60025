@@ -110,7 +110,7 @@ const Cart = () => {
         const orderCollection = collection(db, "orders");
 
         try {
-            const res = await addDoc(orderCollection, purchase);
+            await addDoc(orderCollection, purchase);
 
             await updateStock(cart);
 
