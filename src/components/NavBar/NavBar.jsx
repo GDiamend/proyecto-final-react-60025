@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { useContext } from "react";
 import CartContext from "../../context/CartContext/CartContext";
-import Logo from "../../images/Logo.webp"
+import Logo from "../images/logo.webp"
 import "./style.css"
 
 const NavBar = () => {
