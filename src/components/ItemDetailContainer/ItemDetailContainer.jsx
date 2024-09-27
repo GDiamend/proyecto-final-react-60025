@@ -4,8 +4,6 @@ import { getDoc, doc, getFirestore } from "firebase/firestore";
 import ItemDetail from "./ItemDetail";
 import CartContext from "../../context/CartContext/CartContext";
 import Swal from "sweetalert2";
-import "./style.css";
-
 
 const ItemDetailContainer = () => {
 
